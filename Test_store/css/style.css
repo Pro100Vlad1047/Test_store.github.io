@@ -74,6 +74,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-family: "Lato", sans-serif;
@@ -261,8 +265,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
-.container .preview .preview_body .preview_arrow:hover .arrow {
+.container .preview .preview_body .preview_arrow:hover {
+  -webkit-transform: scale(1, 1.2);
+          transform: scale(1, 1.2);
+}
+.container .preview .preview_body .preview_arrow:active .arrow {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
@@ -297,6 +307,11 @@ body {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   border-radius: 0px 20px 20px 0px;
+}
+.container .preview .preview_body .preview_arrow .arrow a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .container .view {
   display: -webkit-box;
@@ -386,8 +401,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
-.container .view .view_body .view_block_1 .view_arrow:hover .arrow {
+.container .view .view_body .view_block_1 .view_arrow:hover {
+  -webkit-transform: scale(1, 1.2);
+          transform: scale(1, 1.2);
+}
+.container .view .view_body .view_block_1 .view_arrow:active .arrow {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
@@ -422,6 +443,11 @@ body {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   border-radius: 0px 20px 20px 0px;
+}
+.container .view .view_body .view_block_1 .view_arrow .arrow a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .container .view .view_body .view_block_2 {
   display: -webkit-box;
@@ -546,12 +572,21 @@ body {
           align-items: flex-start;
 }
 .container .view .view_body .view_button button {
-  -webkit-transform: translate(0%, -200%);
-          transform: translate(0%, -200%);
+  -webkit-transform: translate(0%, -150%);
+          transform: translate(0%, -150%);
   height: 80%;
   width: 20%;
   background: #F56D91;
   border-radius: 45px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.container .view .view_body .view_button button:hover {
+  background: #FE8FAD;
+}
+.container .view .view_body .view_button button:active {
+  background: #FA3E71;
+  width: 23%;
 }
 .container .view .view_body .view_button button p {
   font-size: 20px;
