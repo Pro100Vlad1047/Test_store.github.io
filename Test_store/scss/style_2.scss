@@ -34,6 +34,9 @@ body{
 			justify-content: flex-start;
 			width: 70%;
 			height: 100%;
+			@media(max-width: 768px){
+				width: 98%;
+			}
 			.header_logo{
 				width: 20%;
 				img{
@@ -41,7 +44,7 @@ body{
 				}
 			}
 			.header_buttons_block{
-				width: 70%;
+				width: 80%;
 				height: 100%;
 				display: flex;
 				justify-content: space-between;
@@ -62,6 +65,12 @@ body{
 						font-size: 20px;
 						text-transform: uppercase;
 						color: #FFFFFF;
+						@media(max-width: 625px){
+							font-size: 15px;
+						}
+						@media(max-width: 425px){
+							font-size: 12px;
+						}
 						a{
 							color: whitesmoke;
 							width: 100%;
@@ -103,7 +112,8 @@ body{
 		width: 100%;
 		align-items: center;
 		flex-direction: column;
-		height: 180vh;
+		height: 1600px;
+
 		//margin-top: 5vh;
 		.info_body{
 			display: flex;
@@ -133,46 +143,118 @@ body{
 					justify-content: space-between;
 					width: 100%;
 					height: 60%;
+					@media(max-width: 950px){
+						flex-direction: column-reverse;
+						height: 80%;
+					}
 					.info_characters{
 						height: 100%;
+						width: 50%;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-around;
+						@media(max-width: 950px){
+							height: 50%;
+							width: 100%;
+							text-align: center;
+						}
+						@media(max-width: 480px){
+								height: 300px;
+							}
 						p{
 							font-size: 20px;
 							line-height: 55px;
+							@media(max-width: 950px){
+								line-height: 30px;
+
+							}
+							@media(max-width: 625px){
+								font-size: 15px;
+							}
+							@media(max-width: 480px){
+								font-size: 10px;
+							}
 						}
 					}
 					.info_photo{
-						width: 30%;
+						width: 50%;
 						height: 100%;
 						display: flex;
-						justify-content: flex-end;
+						justify-content: center;
+						align-items:center;
+						@media(max-width: 950px){
+							height: 50%;
+							width: 100%;
+						}
 						img{
-							height: 90%;
+							width: 100%;
+							max-width: 600px;
+							@media(max-width: 950px){
+								width: 40%;
+							}
+							@media(max-width: 625px){
+								width: 60%;
+							}
+							@media(max-width: 480px){
+								width: 100%;
+							}
 						}
 					}	
 				}
 				.info_last{
-					height: 20%;
+					height: 40%;
 					width: 100%;
 					display: flex;
 					flex-direction: column;
-					justify-content: flex-start;
+					justify-content: space-around;
 					font-size: 20px;
 					line-height: 40px;
+					@media(max-width: 950px){
+						height: 20%;
+						text-align: center;
+						margin-bottom: 100px;
+						font-size: 20px;
+					}
+					@media(max-width: 625px){
+						font-size: 15px;
+					}
+					@media(max-width: 480px){
+						font-size: 10px;
+					}
+					@media(max-width: 300px){
+						font-size: 8px;
+					}
 				}
 			}
 			.info-big-txt{
 				display: flex;
 				width: 80%;
-				height: 35%;
+				height: 400px;
 				font-size: 25px;
 				line-height: 33px;
+				@media(max-width: 950px){
+					width: 95%;
+					font-size:20px;
+				}
+				@media(max-width: 625px){
+					font-size: 15px;
+					line-height: 20px;
+					width: 99%;
+				}
+				p{
+					@media(max-width: 625px){
+					font-size: 15px;
+					line-height: 20px;
+					width: 99%;
+					}
+				}
 			}
 		}
 	}
 	.feedback{
 		display: flex;
 		width: 100%;
-		height: 80vh;
+		height: 400px;
 		justify-content: center;
 		.feedback_body{
 			height: 100%;
@@ -185,10 +267,13 @@ body{
 				font-size: 32px;
 				text-align: center;
 				height: 10%;
+				@media(max-width: 600px){
+					font-size: 25px;
+				}
 			}
 			.feedback_comment{
 				width: 100%;
-				height:30%;
+				height:40%;
 				background: #242425;
 				border-radius: 45px;
 				display: flex;
@@ -196,9 +281,19 @@ body{
 				justify-content: center;
 				align-items:center;
 				gap:20px;
+				@media(max-width: 600px){
+					height: 100px;
+				}
+				@media(max-width: 400px){
+					height: 70px;
+				}
 				img{
 					height: 90%;
 					border-radius:50%;
+					padding-left:10px;
+					@media(max-width: 950px){
+						height: 70%;
+					}
 				}
 				.feedback_text{
 					width: 77%;
@@ -208,11 +303,27 @@ body{
 					justify-content: center;
 					gap:10px ;
 					font-size: 20px;
+					@media(max-width: 950px){
+						font-size: 12px;
+					}
+					@media(max-width: 600px){
+						font-size: 8px;
+						height: 100%;
+					}	
+					@media(max-width: 600px){
+						font-size: 7px;
+					}
 					.feedback_date{
 						color: #5D5C5C;
 						text-align: right;
 						width: 90%;
 						font-size: 32px;
+						@media(max-width: 950px){
+							font-size: 17px;
+						}
+						@media(max-width: 600px){
+							font-size: 10px;
+						}
 					}
 				}
 			}
@@ -221,7 +332,7 @@ body{
 	.contacts{
 		display: flex;
 		width: 100%;
-		height: 150vh;
+		height: 1000px;
 		justify-content: center;
 		.contacts_body{
 			height: 100%;
@@ -243,6 +354,9 @@ body{
 					flex-direction: column;
 					justify-content: space-between;
 					align-items:center;
+					@media(max-width: 600px){
+						height:600px;
+					}
 					.contacts_input{
 						height: 10%;
 						display: flex;
@@ -250,11 +364,17 @@ body{
 						justify-content: space-between;
 						width: 80%;
 						align-items:center;
+						@media(max-width: 600px){
+							height: 50px;
+						}
 						p{
 							align-self:flex-start;
 							text-align: left;
 							height: 20%;
 							font-size: 24px;
+							@media(max-width: 600px){
+								font-size: 15px;
+							}
 						}
 						input{
 							width: 100%;
@@ -283,6 +403,9 @@ body{
 						display: flex;
 						align-items:center;
 						justify-content: center;
+						@media(max-width: 600px){
+							width: 50%;
+						}
 						button{
 							width: 100%;
 							background: #8D8DAA;
@@ -300,6 +423,9 @@ body{
 							p{
 								font-size: 24px;
 								color: whitesmoke;
+								@media(max-width: 600px){
+									font-size: 15px;
+								}
 							}
 						}
 					}
