@@ -233,7 +233,7 @@ body {
 }
 @media (max-height: 520px) {
   .container .preview {
-    height: 150vh;
+    height: 700px;
   }
 }
 .container .preview .preview_body {

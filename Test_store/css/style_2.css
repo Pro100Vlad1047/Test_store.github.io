@@ -228,6 +228,11 @@ body {
           flex-direction: column;
   height: 1600px;
 }
+@media (max-width: 625px) {
+  .container .info {
+    height: 1200px;
+  }
+}
 .container .info .info_body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,6 +248,11 @@ body {
           align-items: center;
   width: 80%;
   height: 100%;
+}
+@media (max-width: 425px) {
+  .container .info .info_body {
+    width: 95%;
+  }
 }
 .container .info .info_body .info_title {
   text-align: center;
@@ -367,14 +377,14 @@ body {
     width: 40%;
   }
 }
-@media (max-width: 625px) {
+@media (max-width: 59 5px) {
   .container .info .info_body .info_characters-photo .info_main .info_photo img {
     width: 60%;
   }
 }
 @media (max-width: 480px) {
   .container .info .info_body .info_characters-photo .info_main .info_photo img {
-    width: 100%;
+    width: 60%;
   }
 }
 .container .info .info_body .info_characters-photo .info_last {
@@ -468,6 +478,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 50px;
+}
+@media (max-width: 625px) {
+  .container .feedback .feedback_body {
+    width: 98%;
+  }
 }
 .container .feedback .feedback_body .feedback_title {
   font-size: 32px;
@@ -577,6 +592,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 625px) {
+  .container .contacts {
+    height: 700px;
+  }
+}
 .container .contacts .contacts_body {
   height: 100%;
   display: -webkit-box;
@@ -588,6 +608,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 50px;
+}
+@media (max-width: 625px) {
+  .container .contacts .contacts_body {
+    width: 98%;
+  }
 }
 .container .contacts .contacts_body .contacts_title {
   text-align: center;
@@ -636,9 +661,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 425px) {
   .container .contacts .contacts_body .contacts_inputs-area form .contacts_input {
     height: 50px;
+    width: 90%;
   }
 }
 .container .contacts .contacts_body .contacts_inputs-area form .contacts_input p {
@@ -669,6 +695,11 @@ body {
 .container .contacts .contacts_body .contacts_inputs-area form .contacts_input input:active {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+@media (max-width: 490px) {
+  .container .contacts .contacts_body .contacts_inputs-area form .contacts_input input {
+    font-size: 12px;
+  }
 }
 .container .contacts .contacts_body .contacts_inputs-area form .contacts_input .contacts_commentar input {
   width: 10%;
