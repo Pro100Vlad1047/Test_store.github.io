@@ -116,6 +116,9 @@ body{
 		justify-content: center;
 		width: 100%;
 		height: 90vh;
+		@media(max-height: 350px){
+			height: 200vh;
+		}
 		.preview_body{
 			display: flex;
 			width: 80%;

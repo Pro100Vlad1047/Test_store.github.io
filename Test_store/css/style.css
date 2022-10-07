@@ -231,6 +231,11 @@ body {
   width: 100%;
   height: 90vh;
 }
+@media (max-height: 350px) {
+  .container .preview {
+    height: 200vh;
+  }
+}
 .container .preview .preview_body {
   display: -webkit-box;
   display: -ms-flexbox;
