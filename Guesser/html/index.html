@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guesser!!!</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+<body>
+	<div class="container">
+		<header id="headder">
+			<div class="header_left-side"></div>
+			<div class="header_title">
+				<h1>Guesser Game</h1>
+				<h2>Time to guessing the numbers,bro)</h2>
+			</div>
+			<div class="color_changing">
+				<label onclick="color_red_Changing()" id="color_red_label" for="color_red">Red</label>
+				<label onclick="color_green_Changing()" id="color_green_label" for="color_green">Green</label>
+				<label onclick="color_blue_Changing()" id="color_blue_label" for="color_blue">Blue</label>
+				<label onclick="color_white_Changing()" id="color_white_label" for="color_white">Yellow</label>
+				<input id="color_red" type="radio" name="Color_Scheme" value="Red" checked>
+				<input id="color_green" type="radio" name="Color_Scheme" value="Green">
+				<input id="color_blue" type="radio" name="Color_Scheme" value="Blue">
+				<input id="color_white" type="radio" name="Color_Scheme" value="White">
+			</div>
+		</header>
+		<main>
+			<div id="play_area" class="play_area">
+				<div class="play_zone">
+					<div id="play_zone_text" class="play_zone_text">
+						<p id="Text_1">Time to guess the number from 1 to 10, you have 3 tries</p>
+						<p id="Text_2">To start the game press button below!</p>
+					</div>
+					<div id="play_zone_write" class="play_zone_write">
+						<button id="start_game" onclick="start()"><p>Tap to generate!</p></button>
+						<input id="usersNumber" type="number" name="numberseeker" value="0">
+						<button id="button" onclick="userNumber()"><p>Check your luck!</p></button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+		<script type="text/javascript" src="../JS/appi.js"></script>
+	</div>
+</body>
+</html>

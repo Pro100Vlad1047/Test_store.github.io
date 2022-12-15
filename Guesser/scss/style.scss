@@ -1,0 +1,214 @@
+@import 'null.scss';
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$red:#CB4335;
+$red_border:#E74C3C;
+$red_button:#EC7063;
+$red_button_active:#B03A2E;
+body{
+  font-family: 'Kanit', sans-serif;
+  background-color:#252525;
+}
+header{
+  background-color: $red;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-bottom:3px solid $red_border;
+  .header_left-side{
+    @media(max-width: 1000px){
+      display: none;
+    }
+  }
+  .color_changing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    @media(max-width: 1000px){
+      gap:10px;
+      justify-content: flex-end;
+      margin-right: 3px;
+      width: 35%;
+    }
+    @media(max-width: 500px){
+      gap:5px;
+    }
+    @media(max-width: 400px){
+      align-items: flex-start;
+      height: 70%;
+    }
+    @media(max-width: 340px){
+      align-items: center;
+      height: 100%;
+    }
+
+    label{
+      font-size: 20px;
+      @media(max-width: 500px){
+        font-size: 16px;
+      }
+    }
+    input{
+      display: none;
+    }
+  }
+  div{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media(max-width: 660px){
+        width: 60%;
+        align-items: flex-start;
+    }
+    h1{
+      font-size: 50px;
+      font-weight: 700;
+      color: black;
+      @media(max-width: 660px){
+        font-size: 30px;
+      }
+      @media(max-width: 450px){
+        font-size: 20px
+      }
+    }
+    h2{
+      font-size: 20px;
+      font-weight: 700;
+      color: black;
+      @media(max-width: 660px){
+        font-size: 15px;
+      }
+      @media(max-width: 450px){
+        font-size: 13px;
+      }
+    }
+  }
+}
+main{
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media(max-width: 660px){
+    height: 750px;  
+  }
+  .play_area{
+    height: 700px;
+    width: 800px;
+    border:2px solid $red_border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $red;
+    border-radius: 20px;
+    @media(max-width: 850px){
+      width: 92%;
+    }
+    @media(max-width: 660px){
+        
+      }
+    .play_zone{
+      height: 90%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap:2px;
+      align-items: center;
+      flex-direction: column;
+      .play_zone_text{
+        border-radius: 12px;
+        height: 58%;
+        width: 100%;
+        border: 2px solid #252525;
+        display: flex ;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background-color: $red_border;
+        @media(max-width: 450px){
+          height: 48%;
+        }
+        p{
+          font-size: 30px;
+          text-align: center;
+          @media(max-width: 450px){
+            font-size: 20px
+          }
+        }
+      }
+      .play_zone_write{
+        background-color: $red_border;
+        border-radius: 12px;
+        height: 41%;
+        width: 100%;
+        border: 2px solid #252525;
+        display: flex ;
+        justify-content: center;
+        gap:60px;
+        align-items:center;
+        flex-direction: row;
+        @media(max-width: 660px){
+          gap:30px;  
+        }
+        @media(max-width: 660px){
+          gap:10px;  
+        }
+        @media(max-width: 450px){
+          flex-direction: column;
+          gap:30px;
+          height: 51%;
+        }
+        input{
+          font-size: 50px;
+          text-align: center;
+          width: 100px;
+          height: 60px;
+          border-radius:25px ;
+          background-color:#252525 ;
+          color:whitesmoke;
+          border:2px solid $red_border;
+        }
+        button{
+          width: 200px;
+          height: 40px;
+          background-color:$red_button;
+          border-radius: 30px;
+          transition: 0.2s;
+          border:2px solid #252525;
+          display: flex ;
+          justify-content: center;
+          align-items: center;
+          @media(max-width: 850px){
+            width: 180px;
+          }
+          @media(max-width: 660px){
+            width: 140px;
+          }
+          @media(max-width: 450px){
+              width: 200px;
+          }
+          p{
+            font-size: 20px;
+            @media(max-width: 850px){
+              font-size: 17px;
+            }
+            @media(max-width: 660px){
+              font-size: 15px;
+            }
+          }
+          &:active{
+            background-color: $red_button_active;
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+  }
+}
